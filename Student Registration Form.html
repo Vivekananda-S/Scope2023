@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+<style>
+    div.imag{
+        background-image: url(tree-736885__340.webp);
+        background-color: #cccccc;
+        height: auto;
+        background-position:center;
+        background-size:cover;
+        position: relative;
+    }
+    div.text{
+        text-align: center;
+        color: white;
+    }
+    div.ali{
+        text-align: justify;
+    }
+    div.left{
+        text-align:left;
+    }
+    .a_size{
+        font-style: oblique;
+    }
+    </style>    
+</head>
+    <body>
+        <div class="ali">
+        <div class="imag">
+        <div class="text">
+            <marquee behavior="alternate"><b>Welcome to Student Registration Portal</b></marquee><br>
+        <h1><u>Student Registration Form</u></h1>
+        <form>
+        <label>First Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="First Name" required>
+            <br><br>
+            <label>Last Name:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Last Name">
+            <br><br>
+            <label>College ID:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name:College ID required><br><br>
+            <label>Date of Birth:</label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" name="Date of Birth" required>
+            <br><br>
+            <label>Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Sex" Value="male">Male
+            <input type="radio" name="Sex" value="female">Female
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br>
+            <label>Game:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="Game" value="" checked>Cricket
+            <input type="checkbox" name="Game" value="">Football
+            <br><br>
+            <input type="checkbox" name="Game" value="">Hockey
+            <br><br>
+       <label>District:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="District">
+            <option>Select</option>
+            <option>Nalgonda</option>
+            <option>Hyderabad</option>
+            <option>Suryapet</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+            <label>Comments:</label>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea row="20" cols="10"></textarea>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br>
+            <button onclick="myFuntion()">Submit</button>
+            <p id="demo"></p>
+        </form>
+       </div>
+        </div>
+        </div>
+         <script>
+        function myFuntion(){
+            var txt;
+            if(confirm("Please Check Your details before pressing Ok")){
+                txt="Please fill the information in the required Format";
+            }else{
+                txt="You Pressed Cancel";
+            }
+             document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+    </body>
+</html>
